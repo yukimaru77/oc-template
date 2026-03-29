@@ -1,6 +1,6 @@
 ---
-name: searxng-search
-description: Keyword-based web search using a local SearXNG instance.
+name: web_search
+description: Keyword-based web search using a SearXNG.
 author: yukimaru
 version: 2.0.0
 keywords:
@@ -15,7 +15,7 @@ requires:
     - jq
 ---
 
-# searxng-search
+# web_search
 
 この skill はローカルの SearXNG を使って Web 検索を行う。
 
@@ -36,7 +36,7 @@ requires:
 次の script を使う:
 
 ```bash
-/workspace/skills/searxng-search/searxng_search.sh "検索クエリ"
+/workspace/skills/web_search/web_search.sh "検索クエリ"
 ````
 
 オプション:
@@ -49,9 +49,9 @@ requires:
 例:
 
 ```bash
-/workspace/skills/searxng-search/searxng_search.sh "OpenClaw browser tool"
-/workspace/skills/searxng-search/searxng_search.sh --limit 3 "PyTorch FSDP tutorial"
-/workspace/skills/searxng-search/searxng_search.sh --json "DGX Spark specs"
+/workspace/skills/web_search/web_search.sh "OpenClaw browser tool"
+/workspace/skills/web_search/web_search.sh --limit 3 "PyTorch FSDP tutorial"
+/workspace/skills/web_search/web_search.sh --json "DGX Spark specs"
 ```
 
 ## 環境変数

@@ -1,5 +1,28 @@
 {
+  "agents": {
+    "defaults": {
+      "workspace": "/workspace",
+      "skipBootstrap": true,
+      "sandbox": {
+        "mode": "off"
+      }
+    }
+  },
   "tools": {
-    "deny": ["web_search"]
-  }
+    "deny": ["web_search"],
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    }
+  },
+    "skills": {
+    "entries": {
+        "github": { "enabled": true },
+        "gh-issues": { "enabled": true, "apiKey": "${GH_TOKEN}" },
+        "clawhub": { "enabled": true },
+        "coding-agent": { "enabled": true },
+        "1password": { "enabled": true }
+    }
+}
 }
