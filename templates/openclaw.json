@@ -1,0 +1,5 @@
+{
+  "tools": {
+    "deny": ["web_search"]
+  }
+}
